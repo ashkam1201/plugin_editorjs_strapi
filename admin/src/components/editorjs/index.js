@@ -3,13 +3,19 @@ import React from 'react';
 import styled from 'styled-components';
 // The Editor.js react component src : https://github.com/natterstefan/react-editor-js
 import EditorJs from '@natterstefan/react-editor-js';
-import tools from '../config/config.js'
-import style, { style } from '../style/style.js'
+import tools from './config.js'
 
-const style = style
+const Wrapper = styled.div`
+  .editorjs__main {
+    min-height: 200px;
+    > div {
+      min-height: 200px;
+    }
+  }
+`;
 
 const Editor = () => {
-  let editor = null;
+  var editor = null;
 
   const onSave = async () => {
     // https://editorjs.io/saving-data
@@ -45,8 +51,7 @@ const Editor = () => {
           editor = editorInstance;
         }}
       />
-    </Wrapper>
-  );
-};
+          </Wrapper>
+          );
 
-export default Editor;
+      export Editor

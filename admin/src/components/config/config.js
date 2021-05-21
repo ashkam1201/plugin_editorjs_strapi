@@ -7,7 +7,6 @@ import Table from '@editorjs/table';
 import List from '@editorjs/list';
 import Checklist from '@editorjs/checklist';
 import ImageTool from '@editorjs/image';
-import { auth, request } from 'strapi-helper-plugin';
 
 
 const tools = {
