@@ -4,9 +4,10 @@ import App from './containers/App';
 import Initializer from './containers/Initializer';
 import lifecycles from './lifecycles';
 import trads from './translations';
-import Editor from '../../admin/src/containers/App'
-export default strapi => {
-  const pluginDescription = pluginPkg.strapi.description || pluginPkg.description;
+import Editor from '../../admin/src/components/editorjs';
+export default (strapi) => {
+  const pluginDescription =
+    pluginPkg.strapi.description || pluginPkg.description;
   const icon = pluginPkg.strapi.icon;
   const name = pluginPkg.strapi.name;
 
