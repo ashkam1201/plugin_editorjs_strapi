@@ -1,45 +1,38 @@
-import Header from '@editorjs/header';
-import Quote from '@editorjs/quote';
-import Embed from '@editorjs/embed';
-import Marker from '@editorjs/marker';
-import Delimiter from '@editorjs/delimiter';
-import Table from '@editorjs/table';
-import List from '@editorjs/list';
-import Checklist from '@editorjs/checklist';
+// tools.js
+import Embed from '@editorjs/embed'
+import Table from '@editorjs/table'
+import Paragraph from '@editorjs/paragraph'
+import List from '@editorjs/list'
+import Warning from '@editorjs/warning'
+import Code from '@editorjs/code'
+import LinkTool from '@editorjs/link'
+import Image from '@editorjs/image'
+import Raw from '@editorjs/raw'
+import Header from '@editorjs/header'
+import Quote from '@editorjs/quote'
+import Marker from '@editorjs/marker'
+import CheckList from '@editorjs/checklist'
+import Delimiter from '@editorjs/delimiter'
+import InlineCode from '@editorjs/inline-code'
+import SimpleImage from '@editorjs/simple-image'
 
-const tools = {
-  header: {
-    class: Header,
-    config: {
-      defaultLevel: 1,
-    },
-  },
-  quote: {
-    class: Quote,
-    inlineToolbar: true,
-  },
-  embed: {
-    class: Embed,
-    config: {
-      services: {
-        youtube: true,
-      },
-    },
-  },
+export const EDITOR_JS_TOOLS = {
+  embed: Embed,
+  table: Table,
+  paragraph: Paragraph,
+  list: List,
+  warning: Warning,
+  code: Code,
+  linkTool: LinkTool,
+  image: Image,
+  raw: Raw,
+  header: Header,
+  quote: Quote,
   marker: Marker,
-  table: {
-    class: Table,
-    inlineToolbar: true,
-  },
-  list: {
-    class: List,
-    inlineToolbar: true,
-  },
+  checklist: CheckList,
   delimiter: Delimiter,
-  checklist: {
-    class: Checklist,
-    inlineToolbar: true,
-  },
-};
+  inlineCode: InlineCode,
+  simpleImage: SimpleImage
+}
 
-export { tools };
+export default { EDITOR_JS_TOOLS };
